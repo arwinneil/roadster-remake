@@ -5,7 +5,7 @@
 
     {{partial "reserve/head"}}
 
-    <style>
+    <!-- <style>
 		.hero {
 			background:  black url(/images/2020-tesla-roadster-2.jpg) center / cover;
 		}
@@ -20,90 +20,136 @@
 			}
 		}
 
-	</style>
+	</style> -->
 </head>
 
 <body>
 
-    <section class="hero is-fullheight">
+    <section class="hero ">
 
         {{partial "reserve/nav"}}
 
-
         <div class="hero-body">
             <div class="container">
-            <h1 class="title is-size-1"> Reserve your Roadster      </h1>
-            <div class="columns"></div>
 
-            <div class="column is-5">  
+                <div class="columns">
+                    <div class="column h center">
+                        <h1 class="title is-size-1"> Reserve your Tesla Roadster </h1>
+                    </div>
+                    <div class="column">
 
-                <div class="control has-icon has-icon-right">
-                    <input class="input" type="text" required/>
-                    <i class="fa material-icons">face</i>
-                    <label class="label">Name</label>
-                    <i class="bar"></i>
+
+                        <img class="center has-text-centered center-column" src="/images/2018-tesla-roadster-banner.png"></img>
+                    </div>
+
                 </div>
-                <div class="control">
-                    <input class="input is-success" type="text" value="bulma" required>
-                    <label class="label">Username</label>
-                    <i class="bar"></i>
-                </div>
-                <p class="control has-icon has-icon-right has-error">
-                    <input class="input" type="text" value="hello@" required>
-                    <i class="fa material-icons">warning</i>
-                    <label class="label">Email</label>
-                    <i class="bar"></i>
-                    <span class="help is-danger">This email is invalid</span>
-                </p>
-        
-                <p class="control">
-                    <select>
-                    <option>Select dropdown</option>
-                    <option>With options</option>
-                    </select>
-                    <label class="label">Subject</label>
-                    <i class="bar"></i>
-                </p>
-                <p class="control">
-                    <textarea class="textarea" required></textarea>
-                    <label class="label">Message</label>
-                    <i class="bar"></i>
-                </p>
-                <p class="checkbox-control">
-                    <label>
-                    <input type="checkbox"/>
-                    <i class="helper"></i>
-                    Remember me
-                    </label>
-                </p>
-                <p class="radio-control">
-                    <label>
-                    <input type="radio" name="question">
-                    <i class="helper"></i>
-                    Yes
-                    </label>
-                    <label>
-                    <input type="radio" name="question">
-                    <i class="helper"></i>
-                    No
-                    </label>
-                </p>
-                <p class="control">
-                    <button class="button is-primary">Submit</button>
-                    <button class="button is-link">Cancel</button>
-                </p>
+                <div class="columns"></div>
+
+
             </div>
-    
-            <div class="column">
-            </div>
-
-    </div>
-  </div>
-
-
-       
+        </div>
 
     </section>
+
+    <body>
+        <section class="section">
+            <div class="container">
+
+                <div class="columns">
+                    <div class="column is-6 is-desktop">
+
+                        <div class="heading">
+
+
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <p class="control">
+                                    <input class="input" type="text" placeholder="Enter your name">
+                                </p>
+                            </div>
+
+
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <p class="control has-icon has-icon-right">
+                                    <input class="input " type="text" placeholder="Email input" value="">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-warning"></i>
+                                    </span>
+                                </p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Country</label>
+                                <p class="control">
+                                    <span class="select">
+                                        <select>
+                                            <option>United States</option>
+                                            <option>Agalega</option>
+
+                              <option>Mauritius</option>
+                                        </select>
+                                    </span>
+                                </p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Message</label>
+                                <p class="control">
+                                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                                </p>
+                            </div>
+
+
+
+                            <div class="field">
+                                <p class="control">
+                                    <div class="notification is-success">
+                                        <label class="radio">
+                                            <input type="radio" name="question">
+                                            Roadster
+                                        </label>
+                                    </div>
+                                    <div class="notification is-danger">
+                                        <label class="radio">
+                                            <input type="radio" name="question">
+                                            Founders Edition Roadster
+                                        </label>
+                                    </div>
+                                </p>
+                            </div>
+
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <button class="button is-primary">Submit</button>
+                                </p>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="column">
+
+                        <div class="notification is-danger" style="margin:50px">
+                            Questions?
+                            We're here to help. Call us anytime.
+                            <strong>(888) 518-3752 </strong>| Request a callback tempus quis
+                            placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+                            purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
+                            consectetur adipiscing elit
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+    </body>
 
     {{partial "home/footer"}}
 
