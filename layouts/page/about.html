@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    {{partial "login/head"}}
+
+</head>
+
+<body>
+
+    {{partial "home/nav"}}
+
+    <body>
+
+        <section class="hero is-danger is-bold">
+
+            <div class="hero-body">
+                <div class="container">
+
+                    <div class="columns">
+                        <div class="column h center">
+                            <h1 class="title is-size-1"> About Tesla </h1>
+                        </div>
+                        <div class="column">
+
+
+                            <img class="center has-text-centered center-column " width="40%" src="/images/tesla-logo.png"></img>
+                        </div>
+
+                    </div>
+                    <div class="columns"></div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    {{ .Content }}  
+                </div>
+            </div>
+        </section>
+    </body>
+
+    {{partial "home/footer"}}
+
+</body>
+
+</html>
