@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/html" href="/styles/normalize.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello Bulma!</title>
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+<link rel="stylesheet" href="/styles/helpers.css">
+<link rel="stylesheet" href="/styles/materialform.css">	
+
+    <style>
+		.hero {
+			background:  black url(/images/2020-tesla-roadster-2.jpg) center / cover;
+		}
+
+		@media (max-width: 1024px) { .hero { background: black url(/images/2020-tesla-roadster-2.jpg) center / cover; } }
+		@media (max-width:  768px) { .hero { background: black url(/images/2020-tesla-roadster-2.jpg) center / cover; } }
+
+		 
+		@media (max-width: 768px) {
+			:root {
+				font-size: 90%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+
+    <section class="hero is-fullheight">
+
+        <nav class="hero-head">
+    <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+        <div class="column left">
+            <figure class="navbar-item image">
+                <img src="/images/tesla.svg" style="width: 6.25rem; height: 1rem;">
+            </figure>
+        </div>
+        <div class="column center desktop">
+            <p class="navbar-item has-text-black">MODEL S </p>
+            <p class="navbar-item has-text-black">MODEL X </p>
+            <p class="navbar-item has-text-black">MODEL 3 </p>
+            <p class="navbar-item has-text-dark">ROADSTER</p>
+            <p class="navbar-item has-text-black">ENERGY  </p>
+        </div>
+        <div class="column right">
+            <p class="navbar-item desktop has-text-white desktop">SHOP   </p>
+            <p class="navbar-item desktop has-text-white desktop">SIGN IN</p>
+            <figure class="navbar-item image">
+                <i class="fas fa-3x fa-bars has-text-black"
+                    style="width: 1rem; height: 1rem;"></i>
+            </figure>
+        </div>
+      
+    </div>
+</nav>
+
+
+        <div class="hero-body">
+            <div class="container">
+            <h1 class="title is-size-1"> Reserve your Roadster      </h1>
+            <div class="columns"></div>
+
+            <div class="column is-5">  
+
+                <div class="control has-icon has-icon-right">
+                    <input class="input" type="text" required/>
+                    <i class="fa material-icons">face</i>
+                    <label class="label">Name</label>
+                    <i class="bar"></i>
+                </div>
+                <div class="control">
+                    <input class="input is-success" type="text" value="bulma" required>
+                    <label class="label">Username</label>
+                    <i class="bar"></i>
+                </div>
+                <p class="control has-icon has-icon-right has-error">
+                    <input class="input" type="text" value="hello@" required>
+                    <i class="fa material-icons">warning</i>
+                    <label class="label">Email</label>
+                    <i class="bar"></i>
+                    <span class="help is-danger">This email is invalid</span>
+                </p>
+        
+                <p class="control">
+                    <select>
+                    <option>Select dropdown</option>
+                    <option>With options</option>
+                    </select>
+                    <label class="label">Subject</label>
+                    <i class="bar"></i>
+                </p>
+                <p class="control">
+                    <textarea class="textarea" required></textarea>
+                    <label class="label">Message</label>
+                    <i class="bar"></i>
+                </p>
+                <p class="checkbox-control">
+                    <label>
+                    <input type="checkbox"/>
+                    <i class="helper"></i>
+                    Remember me
+                    </label>
+                </p>
+                <p class="radio-control">
+                    <label>
+                    <input type="radio" name="question">
+                    <i class="helper"></i>
+                    Yes
+                    </label>
+                    <label>
+                    <input type="radio" name="question">
+                    <i class="helper"></i>
+                    No
+                    </label>
+                </p>
+                <p class="control">
+                    <button class="button is-primary">Submit</button>
+                    <button class="button is-link">Cancel</button>
+                </p>
+            </div>
+    
+            <div class="column">
+            </div>
+
+    </div>
+  </div>
+
+
+       
+
+    </section>
+
+    <section class="section has-background-black">
+				<div class=" has-text-centered has-text-grey-light is-size-7">
+					<p>
+				Inspired from  <a class="has-text-white" href="https://www.tesla.com/roadster">Tesla Roadster</a> | Built with Bulma
+					  <a class="has-text-white" href="https://bulma.io">Bulma</a> & <a class="has-text-white" href="https://gohugo.io">Hugo</a> for educational purposes only 
+					</p>
+				  </div>
+</section>	
+
+</body>
+
+</html>

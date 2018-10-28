@@ -2,16 +2,16 @@
 <html>
 	<head>
 		
-		{{partial "home/head"}}
+		{{partial "home/head" .}}
 
 		<style>
 		/* background */		
 		.hero {
-			background: black url(images/hero-1.jpg) center / cover;
+			background: black url({{.Site.BaseURL}}/images/hero-1.jpg) center / cover;
 		}
 
-		@media (max-width: 1024px) { .hero { background: black url(images/hero-2.jpg) center / cover; } }
-		@media (max-width:  768px) { .hero { background: black url(images/hero-3.jpg) center / cover; } }
+		@media (max-width: 1024px) { .hero { background: black url({{.Site.BaseURL}}/images/hero-2.jpg) center / cover; } }
+		@media (max-width:  768px) { .hero { background: black url({{.Site.BaseURL}}/images/hero-3.jpg) center / cover; } }
 
 		/* responsive */
 		@media (max-width: 768px) {
@@ -28,14 +28,14 @@
 		<section class="hero is-fullheight">
 
 		<!-- .hero-head -->
-		{{partial "home/nav"}}
+		{{partial "home/nav" .}}
 		<!-- /.hero-head -->
 
 		<!-- .hero-body -->
 		<header class="hero-body">
 			<div class="is-overlay has-text-centered single-spaced" style="top: 92px;">
 				<h2 class="subtitle is-4 has-text-weight-light has-text-black">Tesla</h2>
-				<h1 class="title is-1 has-text-black">Roadster</h1>
+				<h1 class="title is-1 has-text-black">{{.Site.BaseURL}}</h1>
 			</div>
 		</header>
 		<!-- /.hero-body -->
