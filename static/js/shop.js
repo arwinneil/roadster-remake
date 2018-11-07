@@ -2,16 +2,41 @@ var list = document.getElementById("products");
 
 var template = document.getElementsByTagName("template")[0];
 
-for (var i=0; i < 10; i++) {
+let url = 'http://www.json-generator.com/api/json/get/cdEGTuJOWa?indent=2';
 
-   var newItem=template.content.cloneNode(true);
+// https://www.json-generator.com/#
+// [
+//   '{{repeat(5, 10)}}',
+//   {
+//     image: 'https://picsum.photos/200?image=',
+//     title: '{{company().toUpperCase()}}',
+//     caption: '{{lorem(15, "words")}}',
+//     price: '{{floating(1000, 4000, 2, "$0,0.00")}}'
+//   }
+// ]
 
-    title= newItem.getElementById("title").innerHTML="Awesome Tesla Product"+(i+ 1);
+fetch(url)
+.then(res => res.json())
+.then((items) => {
 
-      title= newItem.getElementById("image").setAttribute("src","https://picsum.photos/200?image="+ (i+ 1));
+    console.log('Checkout the JSON! ', items);
+
+    for (var i=0; i < items.length; i++) {
+
+      var newItem=template.content.cloneNode(true);
+
+      newItem.getElementById("title").innerHTML=items[i].title;
+
+      newItem.getElementById("image").setAttribute("src",items[i].image+ (i+ 1));
+
+      newItem.getElementById("caption").innerHTML=items[i].caption;
+
+      newItem.getElementById("price").innerHTML=items[i].price;
+
+      list.appendChild(newItem);
+
+    }
+})
+.catch(err => { throw err });
 
 
-    list.appendChild(newItem);
-
-
-}
