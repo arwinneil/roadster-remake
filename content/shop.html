@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    {{partial "shop/head"}}
+
+</head>
+
+<body>
+
+    <section class="hero is-warning ">
+
+        {{partial "home/nav"}}
+
+        <div class="hero-body ">
+            <div class="container">
+
+                <div class="columns">
+                    <div class="column h center">
+                        <h1 class="title is-size-1"> Get Tesla goodies </h1>
+                    </div>
+                    <div class="column">
+                        <img class="center has-text-centered center-column" src="/images/shirt.png" width="300px"></img>
+                    </div>
+
+                </div>
+                <div class="columns"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <body>
+        <section class="section">
+            <div class="container">
+                <div id="products" class="list">
+                    <template  id="template">
+                        <article class="list--item template">
+                            <figure>
+                                <img id="image" src="" alt="">
+    
+                                <header>
+                                    <h2 id="title">Title</h2>
+                                </header>
+    
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </figcaption>
+    
+                                <section class="section">
+                                    <a class="button is-small is-rounded is-pulled-right is-primary">
+                                        <span class="icon is-small ">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </span>
+                                        <span>Add to card</span>
+                                    </a>
+                                </section>
+    
+                            </figure>
+    
+                        </article>
+                    </template>
+                   
+                </div>
+
+
+            </div>
+        </section>
+    </body>
+
+
+    {{partial "home/footer"}}
+
+
+    <script type="text/javascript" src="/js/shop.js"></script>
+
+    
+</body>
+
+</html>
